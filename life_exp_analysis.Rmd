@@ -25,6 +25,8 @@ library(gapminder)
 
 data("gapminder_unfiltered")
 
+# finding the max life exp for each year and country which had
+# highest max life exp
 gapminder_unfiltered %>% 
   group_by(year) %>%
   filter(lifeExp == max(lifeExp)) %>%
